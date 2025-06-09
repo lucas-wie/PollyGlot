@@ -7,6 +7,7 @@ import jpnFlag from "./assets/jpn-flag.png";
 import parrot from "./assets/parrot.png";
 import worldmap from "./assets/worldmap.png";
 
+
 export default function App() {
   const [textToTranslate, setTextToTranslate] = useState("");
   const [language, setLanguage] = useState("fr");
@@ -40,7 +41,7 @@ function MainScreen({ setText, setLanguage }) {
   };
 
   return (
-    <div>
+    <div className="main-div">
       <Header />
       <div className="max-w-md mx-auto mt-6 p-4 border rounded-xl shadow-md">
         <label className="font-bold text-blue-800">Text to translate 👇</label>
@@ -137,13 +138,13 @@ function TranslatedScreen({ text, translationResponse }) {
 
 function Header() {
   return (
-    <div className="bg-[#0A1A33] relative text-white text-center py-4">
-      <img src={worldmap} alt="World Map" className="absolute top-0 left-0 w-full h-full object-cover opacity-10" />
-      <div className="relative z-10 flex items-center justify-center">
-        <img src={parrot} alt="Parrot" className="h-12 mr-2" />
+    <div className="banner">
+      <img src={worldmap} alt="World Map" className="worldmap" />
+      <div className="parrot-section">
+        <img src={parrot} alt="Parrot" className="parrot" />
         <div>
-          <h1 className="text-2xl font-bold text-green-500">PollyGlot</h1>
-          <p>Perfect Translation Every Time</p>
+          <h1 className="">PollyGlot</h1>
+          <h3>Perfect Translation Every Time</h3>
         </div>
       </div>
     </div>
