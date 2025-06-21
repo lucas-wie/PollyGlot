@@ -25,13 +25,49 @@ h3 {
 }
 
 .main-div {
-    width: 320px;
     height: 213px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 75vh;
     flex-direction: column;
+    width: 390px;
+    background-color: #235c21;
+}
+
+.main-div-translate-area {
+  width: 362px;
+  height: 505px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-to-translate-area {
+  width: 320px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.language-selection-area {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.language-selection-area-label {
+
+}
+
+.language-selection-area-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .banner {
