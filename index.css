@@ -32,7 +32,6 @@ h3 {
     height: 75vh;
     flex-direction: column;
     width: 390px;
-    background-color: #235c21;
 }
 
 .main-div-translate-area {
@@ -58,10 +57,6 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;  
-}
-
-.language-selection-area-label {
-
 }
 
 .language-selection-area-options {
@@ -99,6 +94,16 @@ h3 {
   width: 94.88px;
   height: 84.8px;
   margin-right: 12px;
+}
+
+.translated {
+  display: flex;
+  flex-direction: column;
+}
+
+.translated-fields {
+  display: flex;
+  flex-direction: column;
 }
 
 
